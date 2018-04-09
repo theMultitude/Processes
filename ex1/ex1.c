@@ -5,10 +5,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <math.h>
 
 int main(int argc, char *argv[])
 {
-    // Your code here
+    int x = 100
+    int mult = (x)
+    {
+      return x * 100
+    }
 
+    int child = fork();
+    if (child < 0) {
+      fprintf(stderr, "fork failed\n");
+      exit(1);
+    } else if (child == 0) {
+      int poh = (x)
+      {
+        return x + 100;
+      }
+    } else {
+      printf("X is %d\n", x);
+    }
     return 0;
 }
