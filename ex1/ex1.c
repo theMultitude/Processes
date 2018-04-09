@@ -18,16 +18,19 @@ int main(int argc, char *argv[])
 {
     int x = 100;
 
+    int first = mult(x);
+    printf("%d\n", first);
+
     int child = fork();
     if (child < 0) {
       fprintf(stderr, "fork failed\n");
       exit(1);
     } else if (child == 0) {
-      int x = mult(x);
-      printf("X is %d\n", x);
+      int kid = mult(x);
+      printf("X is %d\n", kid);
     } else {
-      int x = mult(x);
-      printf("X is %d\n", x);
+      int par = mult(x);
+      printf("X is %d\n", par);
     }
     return 0;
 }
