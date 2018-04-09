@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
     if (fc < 0) {
       fprintf(stderr, "fork versagt\n");
       exit(1);
-    } else if (fc = 0) {
+    } else if (fc == 0) {
       fprintf(nf, "%s %s %s %s %s %s\n", "Life", "is", "what", "you", "make", "it");
       fclose(nf);
     } else {
