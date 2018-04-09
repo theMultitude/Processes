@@ -9,7 +9,7 @@
 int main(int argc, char* argv[])
 {
     FILE * nf;
-    nf = fopen("./text.txt", "r+");
+    nf = fopen("./text.txt", "a");
 
     int fc = fork();
     if (fc < 0) {
