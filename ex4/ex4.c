@@ -10,7 +10,8 @@
 int count_by(int start, int count)
 {
   int result = start;
-    for(i = 0, i < 10, i++)
+
+    for(int i = 0; i < 10; i++)
     {
       int result = result + count;
     }
@@ -20,6 +21,9 @@ int count_by(int start, int count)
 
 int main(int argc, char* argv[])
 {
+  int start;
+  int count;
+
   int rc = fork();
   if (rc < 0) {
     fprintf(stderr, "fork versagt\n");
